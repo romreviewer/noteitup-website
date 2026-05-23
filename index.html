@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#141218">
+  <meta name="description" content="NoteItUP — privacy-first AI diary &amp; journal with on-device Gemma 4. Rich editor, mood tracking, encrypted cloud backup. Android, iOS &amp; Desktop. Open source.">
+  <meta name="author" content="RomReviewer">
+
+  <meta property="og:title" content="NoteItUP — Your private AI diary">
+  <meta property="og:description" content="Journaling powered by on-device Gemma 4 AI. Your thoughts never leave your phone.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>NoteItUP — Your private AI diary</title>
+
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="page-top">
+
+  <!-- Top App Bar -->
+  <header class="m3-top-bar" id="topBar">
+    <div class="container">
+      <a class="m3-brand" href="#page-top" aria-label="NoteItUP">
+        <span class="brand-logo" aria-hidden="true">
+          <img src="img/icon.png" alt="">
+        </span>
+        <span class="brand-name">NoteItUP</span>
+      </a>
+      <nav class="m3-nav" id="primaryNav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#ai">AI</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#download">Download</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://romreviewer.com" class="parent-link" rel="noopener">RomReviewer</a>
+      </nav>
+      <button class="m3-menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+        <span class="material-symbols-rounded">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-logo reveal">
+        <img src="img/icon.png" alt="NoteItUP app icon">
+      </div>
+      <h1 class="reveal">Your private AI diary.</h1>
+      <p class="hero-sub reveal">Journaling powered by on-device Gemma 4 AI. Your thoughts never leave your phone.</p>
+      <div class="role-chips reveal">
+        <span class="m3-chip assist"><span class="material-symbols-rounded">android</span>Android</span>
+        <span class="m3-chip"><span class="material-symbols-rounded">phone_iphone</span>iOS — Coming soon</span>
+        <span class="m3-chip"><span class="material-symbols-rounded">desktop_windows</span>Desktop — Coming soon</span>
+        <span class="m3-chip tonal"><span class="material-symbols-rounded">bolt</span>On-Device AI</span>
+        <span class="m3-chip assist"><span class="material-symbols-rounded">code</span>Open Source</span>
+      </div>
+      <div class="hero-actions reveal">
+        <a href="https://play.google.com/store/apps/details?id=com.romreviewertools.noteitup" class="m3-btn filled" target="_blank" rel="noopener">
+          <span class="material-symbols-rounded">shop</span>
+          Get it on Google Play
+        </a>
+        <a href="https://github.com/romreviewer/NoteItUP" class="m3-btn outlined" target="_blank" rel="noopener">
+          <span class="material-symbols-rounded">code</span>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>Built for the way you actually journal</h2>
+        <p>Everything you need for a daily writing habit — without the bloat or the cloud.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card reveal">
+          <div class="icon"><span class="material-symbols-rounded">edit_note</span></div>
+          <h3>Rich WYSIWYG editor</h3>
+          <p>Bold, italics, headings, lists, quotes, code blocks and links — with a live preview toggle.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon"><span class="material-symbols-rounded">mood</span></div>
+          <h3>Mood tracking</h3>
+          <p>Tag each entry with five mood levels and watch trends in a beautiful distribution chart.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon"><span class="material-symbols-rounded">folder</span></div>
+          <h3>Folders &amp; tags</h3>
+          <p>Color-coded folders, multiple tags per entry, and instant filtering across your library.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon"><span class="material-symbols-rounded">calendar_month</span></div>
+          <h3>Calendar view</h3>
+          <p>Jump to any day and see which dates have entries at a glance.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon"><span class="material-symbols-rounded">image</span></div>
+          <h3>Image attachments</h3>
+          <p>Pick from gallery or capture with the camera. Photos are auto-compressed to keep your library lean.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon"><span class="material-symbols-rounded">location_on</span></div>
+          <h3>Location tagging</h3>
+          <p>Optional GPS with reverse geocoding so you remember where each thought was written.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon"><span class="material-symbols-rounded">insights</span></div>
+          <h3>Statistics dashboard</h3>
+          <p>Writing streaks, entries per month, top tags, and mood breakdowns — all from your own data.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="icon"><span class="material-symbols-rounded">cloud_sync</span></div>
+          <h3>Encrypted cloud backup</h3>
+          <p>Optional Google Drive or Dropbox sync, protected end-to-end with AES-256-GCM.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="shots" id="screenshots">
+    <div class="container">
+      <div class="section-header">
+        <h2>A diary that feels at home on your phone</h2>
+        <p>Material You styling, fluid animations, and a layout built around your writing — not around chrome.</p>
+      </div>
+      <div class="shots-scroll" role="list">
+        <div class="shot reveal" role="listitem">
+          <div class="shot-frame"><img src="img/screenshots/home.png" alt="NoteItUP home screen showing the list of journal entries" loading="lazy"></div>
+          <span class="shot-caption">Home — your entries at a glance</span>
+        </div>
+        <div class="shot reveal" role="listitem">
+          <div class="shot-frame"><img src="img/screenshots/editor.png" alt="NoteItUP editor screen with rich text formatting toolbar" loading="lazy"></div>
+          <span class="shot-caption">Editor — rich text with AI tools</span>
+        </div>
+        <div class="shot reveal" role="listitem">
+          <div class="shot-frame"><img src="img/screenshots/calendar.png" alt="NoteItUP calendar view showing entries by date" loading="lazy"></div>
+          <span class="shot-caption">Calendar — browse by date</span>
+        </div>
+        <div class="shot reveal" role="listitem">
+          <div class="shot-frame"><img src="img/screenshots/settings.png" alt="NoteItUP settings screen with theme and AI options" loading="lazy"></div>
+          <span class="shot-caption">Settings — themes, AI &amp; backup</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Tools -->
+  <section id="ai">
+    <div class="container">
+      <div class="section-header">
+        <h2>Powered by on-device Gemma 4</h2>
+        <p>Eight writing tools and a brainstorm chat — running locally on your device with Google's Gemma 4 model via LiteRT-LM. No round trips. No telemetry.</p>
+      </div>
+
+      <div class="ai-grid">
+        <div class="ai-tile reveal">
+          <div class="icon"><span class="material-symbols-rounded">auto_fix_high</span></div>
+          <span class="label">Improve for Journal</span>
+        </div>
+        <div class="ai-tile reveal">
+          <div class="icon"><span class="material-symbols-rounded">spellcheck</span></div>
+          <span class="label">Fix Grammar</span>
+        </div>
+        <div class="ai-tile reveal">
+          <div class="icon"><span class="material-symbols-rounded">lightbulb</span></div>
+          <span class="label">Improve Clarity</span>
+        </div>
+        <div class="ai-tile reveal">
+          <div class="icon"><span class="material-symbols-rounded">compress</span></div>
+          <span class="label">Make Shorter</span>
+        </div>
+        <div class="ai-tile reveal">
+          <div class="icon"><span class="material-symbols-rounded">expand</span></div>
+          <span class="label">Expand</span>
+        </div>
+        <div class="ai-tile reveal">
+          <div class="icon"><span class="material-symbols-rounded">business_center</span></div>
+          <span class="label">Professional Tone</span>
+        </div>
+        <div class="ai-tile reveal">
+          <div class="icon"><span class="material-symbols-rounded">sentiment_satisfied</span></div>
+          <span class="label">Casual Tone</span>
+        </div>
+        <div class="ai-tile reveal">
+          <div class="icon"><span class="material-symbols-rounded">summarize</span></div>
+          <span class="label">Summarize</span>
+        </div>
+      </div>
+
+      <div class="brainstorm-card reveal">
+        <div class="icon"><span class="material-symbols-rounded">forum</span></div>
+        <div>
+          <h3>Brainstorm Mode</h3>
+          <p>An interactive AI chat that remembers your conversation across sessions. Think out loud, get unstuck, or explore an idea — without sending a single token to the cloud.</p>
+        </div>
+      </div>
+
+      <p class="byok-note">Prefer a cloud model? Bring your own key. NoteItUP also supports:</p>
+      <div class="byok-row">
+        <span class="m3-chip">Groq</span>
+        <span class="m3-chip">Google Gemini</span>
+        <span class="m3-chip">OpenRouter</span>
+        <span class="m3-chip">Together AI</span>
+        <span class="m3-chip">OpenAI</span>
+        <span class="m3-chip">Anthropic</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="priv" id="privacy">
+    <div class="container">
+      <div class="section-header">
+        <h2>Privacy isn't a setting. It's the default.</h2>
+        <p>Your diary should be the one place that's truly yours. NoteItUP is built local-first, with cloud features that are opt-in and end-to-end encrypted.</p>
+      </div>
+
+      <div class="priv-grid">
+        <div class="priv-card featured reveal">
+          <div class="icon"><span class="material-symbols-rounded">memory</span></div>
+          <h3>On-device AI inference</h3>
+          <p>Gemma 4 runs on your phone via LiteRT-LM. Prompts and responses never touch a server you don't own.</p>
+        </div>
+        <div class="priv-card reveal">
+          <div class="icon"><span class="material-symbols-rounded">save</span></div>
+          <h3>Local-first storage</h3>
+          <p>Entries live in an on-device SQLite database. Cloud sync is optional — and off by default.</p>
+        </div>
+        <div class="priv-card reveal">
+          <div class="icon"><span class="material-symbols-rounded">lock</span></div>
+          <h3>AES-256-GCM backups</h3>
+          <p>Backups to Google Drive or Dropbox are encrypted with a password only you know — before they leave your device.</p>
+        </div>
+      </div>
+
+      <div class="priv-chips">
+        <span class="m3-chip"><span class="material-symbols-rounded">pin</span>PIN lock</span>
+        <span class="m3-chip"><span class="material-symbols-rounded">fingerprint</span>Biometric unlock</span>
+        <span class="m3-chip"><span class="material-symbols-rounded">timer</span>Auto-lock</span>
+        <span class="m3-chip"><span class="material-symbols-rounded">wifi</span>Wi-Fi-only sync</span>
+        <span class="m3-chip"><span class="material-symbols-rounded">file_download</span>Export to JSON / CSV / MD / PDF</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download">
+    <div class="container">
+      <div class="section-header">
+        <h2>Start writing today.</h2>
+        <p>Free, open source, and ready to install on Android. iOS and Desktop builds are coming soon.</p>
+      </div>
+      <div class="download-inner">
+        <div class="dl-row">
+          <a href="https://play.google.com/store/apps/details?id=com.romreviewertools.noteitup" class="m3-btn filled" target="_blank" rel="noopener">
+            <span class="material-symbols-rounded">shop</span>
+            Get it on Google Play
+          </a>
+          <a href="https://github.com/romreviewer/NoteItUP" class="m3-btn outlined" target="_blank" rel="noopener">
+            <span class="material-symbols-rounded">code</span>
+            Source on GitHub
+          </a>
+        </div>
+        <div class="dl-meta">
+          <span><span class="material-symbols-rounded" style="font-size:16px">verified</span>Version 1.7.0</span>
+          <span class="dot">•</span>
+          <span><span class="material-symbols-rounded" style="font-size:16px">balance</span>MIT License</span>
+          <span class="dot">•</span>
+          <span><span class="material-symbols-rounded" style="font-size:16px">phone_iphone</span>iOS &amp; Desktop coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Questions, answered</h2>
+        <p>If you have one we haven't covered, open an issue on GitHub.</p>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item reveal">
+          <summary>Is NoteItUP really free?</summary>
+          <div class="faq-body">Yes — completely free, with no ads, no trackers, and no premium tier. The app is open source under the MIT license, so you can audit, fork, or self-build it any time.</div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Does my data ever leave my device?</summary>
+          <div class="faq-body">Only if you explicitly turn on cloud backup. By default, every entry, image, and AI response stays on your phone. If you do enable Google Drive or Dropbox sync, backups are encrypted with AES-256-GCM using a password you choose — before they're uploaded.</div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Which platforms are supported?</summary>
+          <div class="faq-body">Android is the primary platform and is live on the Play Store today. iOS and Desktop (macOS, Windows, Linux) builds exist in the codebase via Kotlin Multiplatform / Compose Multiplatform and will be published next.</div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>How does the on-device AI actually work?</summary>
+          <div class="faq-body">NoteItUP ships Google's Gemma 4 (2B parameters, instruction-tuned) and runs it locally using LiteRT-LM, Google's on-device inference engine. The model is downloaded once, then every "Improve clarity" or Brainstorm chat happens entirely offline.</div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Can I import from Day One or Joplin?</summary>
+          <div class="faq-body">Yes. NoteItUP imports full Day One archives (with photos) and Joplin <code>.jex</code> exports. You can also restore from any previous NoteItUP backup. Exports go out as JSON, CSV, Markdown, or formatted PDF.</div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary>Where do I report bugs or request features?</summary>
+          <div class="faq-body">On <a href="https://github.com/romreviewer/NoteItUP/issues" target="_blank" rel="noopener">GitHub Issues</a>. PRs welcome too.</div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-row">
+            <img src="img/icon.png" alt="">
+            <strong>NoteItUP</strong>
+          </div>
+          <p class="tagline">Your private AI diary. Open source. Built by <a href="https://romreviewer.com" rel="noopener">RomReviewer</a>.</p>
+        </div>
+
+        <div>
+          <h4>Product</h4>
+          <div class="col-links">
+            <a href="#features">Features</a>
+            <a href="#ai">AI tools</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#download">Download</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Links</h4>
+          <div class="col-links">
+            <a href="https://play.google.com/store/apps/details?id=com.romreviewertools.noteitup" target="_blank" rel="noopener">Google Play</a>
+            <a href="https://github.com/romreviewer/NoteItUP" target="_blank" rel="noopener">GitHub repository</a>
+            <a href="https://github.com/romreviewer/NoteItUP/issues" target="_blank" rel="noopener">Report an issue</a>
+            <a href="privacy.html">Privacy policy</a>
+            <a href="https://romreviewer.com" target="_blank" rel="noopener">RomReviewer ↗</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Connect</h4>
+          <div class="social-row">
+            <a class="social-btn" href="https://github.com/romreviewer/NoteItUP" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.9-.39s1.98.13 2.9.39c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.18c0 .31.21.68.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+            <a class="social-btn" href="https://play.google.com/store/apps/details?id=com.romreviewertools.noteitup" target="_blank" rel="noopener" aria-label="Google Play">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.7c-.4.2-.6.6-.6 1.1v18.4c0 .5.2.9.6 1.1l10.7-10.3L3.6 1.7zm12.1 11.5l2.7 2.6-12.6 7.2 9.9-9.8zm0-2l-9.9-9.8 12.6 7.2-2.7 2.6zm4.4-1.7l-2.9 1.7 2.9 2.8c.6-.3 1-.9 1-1.7v-1.1c0-.8-.4-1.4-1-1.7z"/></svg>
+            </a>
+            <a class="social-btn" href="https://romreviewer.com" target="_blank" rel="noopener" aria-label="RomReviewer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 2c1.7 0 3.2.6 4.4 1.6L5.6 16.4A8 8 0 0112 4zm0 16c-1.7 0-3.2-.6-4.4-1.6L18.4 7.6A8 8 0 0112 20z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> RomReviewer · NoteItUP is open source under the MIT License.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top FAB -->
+  <button class="m3-fab" id="scrollTopFab" aria-label="Scroll to top">
+    <span class="material-symbols-rounded">arrow_upward</span>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

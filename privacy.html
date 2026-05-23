@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#141218">
+  <meta name="description" content="NoteItUP privacy policy — how the app handles your diary, location, photos, cloud backup, and analytics.">
+  <meta name="robots" content="index, follow">
+
+  <title>Privacy Policy — NoteItUP</title>
+
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .legal-hero {
+      padding: calc(var(--topbar-h) + 80px) var(--gutter) 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .legal-hero::before {
+      content: "";
+      position: absolute;
+      top: -200px; left: 50%;
+      width: 600px; height: 600px;
+      transform: translateX(-50%);
+      background: var(--md-primary-container);
+      border-radius: 50%;
+      filter: blur(140px);
+      opacity: .25;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .legal-hero > * { position: relative; z-index: 1; }
+    .legal-hero h1 {
+      font-size: clamp(2rem, 4vw + 1rem, 3rem);
+      font-weight: 500;
+      letter-spacing: -.02em;
+      margin: 0 0 12px;
+      background: linear-gradient(135deg, var(--md-primary) 0%, var(--md-tertiary) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .legal-hero .updated {
+      color: var(--md-on-surface-variant);
+      font-size: .9375rem;
+      margin: 0;
+    }
+
+    .legal {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 var(--gutter) 96px;
+      color: var(--md-on-surface);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .legal .tldr {
+      background:
+        radial-gradient(circle at 0% 0%, rgba(208,188,255,.10) 0%, transparent 55%),
+        radial-gradient(circle at 100% 100%, rgba(3,218,198,.10) 0%, transparent 55%),
+        var(--md-surface-container);
+      border: 1px solid var(--md-primary);
+      border-radius: var(--shape-lg);
+      padding: 20px 24px;
+      margin: 0 0 40px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .legal .tldr .material-symbols-rounded { color: var(--md-primary); font-size: 28px; flex-shrink: 0; }
+    .legal .tldr strong { color: var(--md-on-surface); display: block; margin-bottom: 4px; }
+    .legal .tldr p { margin: 0; color: var(--md-on-surface-variant); font-size: .9375rem; }
+
+    .legal h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--md-on-surface);
+      margin: 48px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--md-outline-variant);
+    }
+    .legal h3 {
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: var(--md-on-surface);
+      margin: 32px 0 12px;
+    }
+    .legal p { margin: 0 0 16px; color: var(--md-on-surface-variant); }
+    .legal ul { padding-left: 1.4em; margin: 0 0 20px; color: var(--md-on-surface-variant); }
+    .legal li { margin: 6px 0; }
+    .legal li strong { color: var(--md-on-surface); }
+    .legal a { font-weight: 500; }
+    .legal code {
+      background: var(--md-surface-container-high);
+      border: 1px solid var(--md-outline-variant);
+      border-radius: var(--shape-xs);
+      padding: 1px 6px;
+      font-size: .875em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    .legal hr {
+      border: none;
+      border-top: 1px solid var(--md-outline-variant);
+      margin: 40px 0;
+    }
+    .legal .perm-card {
+      background: var(--md-surface-container-low);
+      border: 1px solid var(--md-outline-variant);
+      border-radius: var(--shape-md);
+      padding: 20px 24px;
+      margin: 0 0 16px;
+    }
+    .legal .perm-card h3 { margin-top: 0; }
+    .legal .perm-card ul { margin-bottom: 0; }
+
+    .legal .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--md-primary);
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    .legal .back-link .material-symbols-rounded { font-size: 18px; }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Top App Bar -->
+  <header class="m3-top-bar" id="topBar">
+    <div class="container">
+      <a class="m3-brand" href="index.html" aria-label="NoteItUP">
+        <span class="brand-logo" aria-hidden="true">
+          <img src="img/icon.png" alt="">
+        </span>
+        <span class="brand-name">NoteItUP</span>
+      </a>
+      <nav class="m3-nav" id="primaryNav" aria-label="Primary">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#ai">AI</a>
+        <a href="index.html#privacy">Privacy</a>
+        <a href="index.html#download">Download</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="https://romreviewer.com" class="parent-link" rel="noopener">RomReviewer</a>
+      </nav>
+      <button class="m3-menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+        <span class="material-symbols-rounded">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="legal-hero">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: January 3, 2025</p>
+  </section>
+
+  <main class="legal">
+    <a class="back-link" href="index.html"><span class="material-symbols-rounded">arrow_back</span> Back to NoteItUP</a>
+
+    <div class="tldr">
+      <span class="material-symbols-rounded">lock</span>
+      <div>
+        <strong>TL;DR</strong>
+        <p>Your diary is private. We don't collect, read, or share your personal diary entries. Everything stays on your device unless you choose to use cloud backup.</p>
+      </div>
+    </div>
+
+    <h2>Introduction</h2>
+    <p>Welcome to NoteItUP. This Privacy Policy explains how we handle your information when you use our personal diary application ("App"). We are committed to protecting your privacy and ensuring you have a secure experience.</p>
+
+    <h2>Information We Collect</h2>
+
+    <h3>1. Data You Create</h3>
+    <ul>
+      <li><strong>Diary Entries:</strong> Text content, titles, dates, and mood indicators you create</li>
+      <li><strong>Photos:</strong> Images you attach to diary entries</li>
+      <li><strong>Location Data:</strong> GPS coordinates and addresses (only if you enable location tagging)</li>
+      <li><strong>Tags and Folders:</strong> Organizational data you create</li>
+      <li><strong>App Settings:</strong> Your preferences for themes, colors, and app behavior</li>
+    </ul>
+    <p><strong>Important:</strong> All this data is stored locally on your device. We do NOT have access to it.</p>
+
+    <h3>2. Technical Information</h3>
+    <ul>
+      <li><strong>Crash Reports:</strong> Anonymous crash logs via Firebase Crashlytics to help us fix bugs</li>
+      <li><strong>Analytics:</strong> Anonymous usage statistics via Firebase Analytics (e.g., which features are used, not what you write)</li>
+    </ul>
+
+    <h3>What we DON'T collect</h3>
+    <ul>
+      <li>We do NOT read your diary entries</li>
+      <li>We do NOT collect personal identification information</li>
+      <li>We do NOT track your activity across other apps or websites</li>
+      <li>We do NOT sell or rent any data</li>
+      <li>We do NOT use advertising networks</li>
+    </ul>
+
+    <h2>How We Use Your Information</h2>
+
+    <h3>Local Data Storage</h3>
+    <ul>
+      <li>Your diary entries are stored in a local database on your device</li>
+      <li>Photos are stored in your app's private storage folder</li>
+      <li>Only you can access this data through the app</li>
+    </ul>
+
+    <h3>Optional Cloud Sync</h3>
+    <p>If you choose to enable Dropbox cloud sync:</p>
+    <ul>
+      <li>Data is encrypted and synced to YOUR personal Dropbox account</li>
+      <li>We do NOT have access to your Dropbox account or files</li>
+      <li>You control the sync settings and can disable it anytime</li>
+      <li>Data transfer uses secure HTTPS encryption</li>
+    </ul>
+
+    <h3>Analytics and Crash Reporting</h3>
+    <p>We use Firebase (Google) to collect:</p>
+    <ul>
+      <li><strong>Anonymous crash reports:</strong> To identify and fix bugs</li>
+      <li><strong>Anonymous usage statistics:</strong> To understand which features are used and improve the app</li>
+      <li><strong>No personal diary content:</strong> We never collect or see what you write</li>
+    </ul>
+    <p>These services help us make NoteItUP better without compromising your privacy.</p>
+
+    <h2>Data Sharing and Third Parties</h2>
+
+    <h3>We Do NOT Share Your Data</h3>
+    <p>Your diary entries and personal content are NEVER shared with:</p>
+    <ul>
+      <li>Third-party companies</li>
+      <li>Advertisers</li>
+      <li>Data brokers</li>
+      <li>Other users</li>
+      <li>Anyone else</li>
+    </ul>
+
+    <h3>Third-Party Services We Use</h3>
+    <ol>
+      <li>
+        <strong>Dropbox</strong> (Optional — only if you enable cloud sync)
+        <ul>
+          <li>Purpose: Store encrypted backups in YOUR Dropbox account</li>
+          <li>Privacy Policy: <a href="https://www.dropbox.com/privacy" target="_blank" rel="noopener">dropbox.com/privacy</a></li>
+          <li>You control: Enable/disable sync, delete backups anytime</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Firebase (Google)</strong>
+        <ul>
+          <li>Purpose: Anonymous crash reporting and analytics</li>
+          <li>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+          <li>Data collected: Anonymous crash logs, feature usage statistics</li>
+          <li>No personal diary content is ever sent</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Data Security</h2>
+    <p>We take security seriously:</p>
+
+    <h3>Local Security</h3>
+    <ul>
+      <li><strong>Optional PIN Lock:</strong> Protect your app with a 4-digit PIN</li>
+      <li><strong>Biometric Lock:</strong> Use fingerprint or face recognition</li>
+      <li><strong>Local Encryption:</strong> Diary data stored securely on your device</li>
+    </ul>
+
+    <h3>Cloud Security</h3>
+    <ul>
+      <li><strong>HTTPS Encryption:</strong> All data transfers use secure encryption</li>
+      <li><strong>Encrypted Backups:</strong> Cloud backups are encrypted before upload</li>
+      <li><strong>OAuth 2.0:</strong> Secure authentication with Dropbox (we never see your password)</li>
+    </ul>
+
+    <h3>Our Commitment</h3>
+    <ul>
+      <li>We follow industry best practices for data security</li>
+      <li>We regularly update the app to fix security vulnerabilities</li>
+      <li>We never build backdoors or ways to access your diary</li>
+    </ul>
+
+    <h2>App Permissions Explained</h2>
+    <p>NoteItUP requests the following permissions to provide its features. All permissions are optional except storage (required for core functionality):</p>
+
+    <div class="perm-card">
+      <h3>Storage / Files</h3>
+      <ul>
+        <li><strong>Permission:</strong> Read External Storage (Android 12 and below only)</li>
+        <li><strong>Why we need it:</strong> To read photos you select from the gallery on older Android versions (12 and below)</li>
+        <li><strong>When used:</strong> Only when you select photos to attach to diary entries</li>
+        <li><strong>Optional:</strong> Yes (you can still use the app without attaching photos)</li>
+        <li><strong>Can be revoked:</strong> Yes (photo attachment will not work on Android 12 and below)</li>
+        <li><strong>Privacy note:</strong> On Android 13+, we use the privacy-friendly Photo Picker which doesn't require any storage permission. Selected photos are immediately copied to the app's private storage.</li>
+      </ul>
+    </div>
+
+    <div class="perm-card">
+      <h3>Camera</h3>
+      <ul>
+        <li><strong>Permission:</strong> CAMERA</li>
+        <li><strong>Why we need it:</strong> To capture photos directly from the app to attach to diary entries</li>
+        <li><strong>When used:</strong> Only when you tap the camera button to take a photo</li>
+        <li><strong>Optional:</strong> Yes (you can still attach photos from gallery)</li>
+        <li><strong>Can be revoked:</strong> Yes (you can disable in system settings)</li>
+      </ul>
+    </div>
+
+    <div class="perm-card">
+      <h3>Location</h3>
+      <ul>
+        <li><strong>Permission:</strong> ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION</li>
+        <li><strong>Why we need it:</strong> To add GPS coordinates and location names to diary entries</li>
+        <li><strong>When used:</strong> Only when you enable location tagging for an entry</li>
+        <li><strong>Optional:</strong> Yes (location tagging is completely optional)</li>
+        <li><strong>Can be revoked:</strong> Yes (location features will be disabled)</li>
+        <li><strong>Privacy note:</strong> Location data stays on your device unless you sync to cloud</li>
+      </ul>
+    </div>
+
+    <div class="perm-card">
+      <h3>Internet</h3>
+      <ul>
+        <li><strong>Permission:</strong> INTERNET, ACCESS_NETWORK_STATE</li>
+        <li><strong>Why we need it:</strong> For optional cloud backup to Dropbox and anonymous crash reporting</li>
+        <li><strong>When used:</strong> Only when syncing to cloud or when app crashes</li>
+        <li><strong>Optional:</strong> Yes (app works fully offline)</li>
+        <li><strong>Can be revoked:</strong> Cannot be disabled (system permission)</li>
+        <li><strong>Privacy note:</strong> We never send your diary content over internet without encryption</li>
+      </ul>
+    </div>
+
+    <div class="perm-card">
+      <h3>Notifications</h3>
+      <ul>
+        <li><strong>Permission:</strong> POST_NOTIFICATIONS (Android 13+)</li>
+        <li><strong>Why we need it:</strong> To send you daily writing reminders (if you enable them)</li>
+        <li><strong>When used:</strong> Only if you enable daily reminders in Settings</li>
+        <li><strong>Optional:</strong> Yes (reminders are opt-in)</li>
+        <li><strong>Can be revoked:</strong> Yes (disable in system settings or app settings)</li>
+      </ul>
+    </div>
+
+    <div class="perm-card">
+      <h3>Biometric / Fingerprint</h3>
+      <ul>
+        <li><strong>Permission:</strong> USE_BIOMETRIC, USE_FINGERPRINT</li>
+        <li><strong>Why we need it:</strong> To unlock the app with fingerprint or face recognition</li>
+        <li><strong>When used:</strong> Only if you enable biometric lock in Security settings</li>
+        <li><strong>Optional:</strong> Yes (you can use PIN or no lock)</li>
+        <li><strong>Can be revoked:</strong> Yes (biometric lock will be disabled)</li>
+        <li><strong>Privacy note:</strong> We don't store biometric data; we only ask the system to verify</li>
+      </ul>
+    </div>
+
+    <h3>No Account Required</h3>
+    <p>NoteItUP does not require any account, email, phone number, or personal information to use. All permissions are for local device features only.</p>
+
+    <hr>
+
+    <h2>Your Rights and Control</h2>
+    <p>You have complete control over your data:</p>
+
+    <h3>Access Your Data</h3>
+    <ul>
+      <li>View all your entries anytime in the app</li>
+      <li>Export all data to JSON format</li>
+      <li>No restrictions or fees</li>
+    </ul>
+
+    <h3>Delete Your Data</h3>
+    <ul>
+      <li>Delete individual entries within the app</li>
+      <li>Delete all data by uninstalling the app</li>
+      <li>Delete cloud backups from your Dropbox account</li>
+      <li>No data remains on our servers (we don't have servers for diary content)</li>
+    </ul>
+
+    <h3>Data Portability</h3>
+    <ul>
+      <li>Export all entries to JSON format</li>
+      <li>Take your data anywhere</li>
+      <li>No lock-in</li>
+    </ul>
+
+    <h3>Opt-Out Options</h3>
+    <ul>
+      <li>Disable cloud sync anytime</li>
+      <li>Disable location tagging</li>
+      <li>Disable camera access</li>
+      <li>Disable notifications</li>
+      <li>Cannot opt-out of crash reporting (necessary for app stability)</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>NoteItUP is rated for ages 3+ (PEGI 3 / Everyone). However:</p>
+    <ul>
+      <li>We do not knowingly collect data from children under 13</li>
+      <li>No account or personal information is required</li>
+      <li>Parents should supervise children's use of the app</li>
+      <li>If you believe a child has provided data to us, contact us to delete it</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+
+    <h3>Local Data</h3>
+    <ul>
+      <li>Data remains on your device until you delete it</li>
+      <li>Uninstalling the app deletes all local data</li>
+      <li>We have no access to your local data</li>
+    </ul>
+
+    <h3>Cloud Backups</h3>
+    <ul>
+      <li>Backups remain in your Dropbox until you delete them</li>
+      <li>You control retention through Dropbox settings</li>
+    </ul>
+
+    <h3>Analytics Data</h3>
+    <ul>
+      <li>Anonymous analytics data is retained by Firebase according to their policy</li>
+      <li>This data cannot be linked back to you or your diary content</li>
+    </ul>
+
+    <h2>International Data Transfers</h2>
+    <ul>
+      <li>Your diary data stays on your device (your country)</li>
+      <li>If you use Dropbox sync, data may be transferred to Dropbox servers (varies by your Dropbox region)</li>
+      <li>Firebase analytics data may be processed in the United States (Google's servers)</li>
+      <li>All transfers use encryption</li>
+    </ul>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do:</p>
+    <ul>
+      <li>We will update the "Last Updated" date at the top</li>
+      <li>Significant changes will be announced in app update notes</li>
+      <li>Continued use of the app means you accept the updated policy</li>
+      <li>You can always find the latest policy at <a href="https://github.com/romreviewer/NoteItUP/blob/main/PRIVACY.md" target="_blank" rel="noopener">github.com/romreviewer/NoteItUP/blob/main/PRIVACY.md</a></li>
+    </ul>
+
+    <h2>Your Consent</h2>
+    <p>By using NoteItUP, you consent to this Privacy Policy.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have questions, concerns, or requests about your privacy:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:romreviewertools@protonmail.com">romreviewertools@protonmail.com</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/romreviewer/NoteItUP/issues" target="_blank" rel="noopener">github.com/romreviewer/NoteItUP/issues</a></li>
+      <li><strong>Response time:</strong> We aim to respond within 48 hours</li>
+    </ul>
+
+    <h2>Legal Compliance</h2>
+    <p>This Privacy Policy complies with:</p>
+    <ul>
+      <li>General Data Protection Regulation (GDPR) — EU</li>
+      <li>California Consumer Privacy Act (CCPA) — USA</li>
+      <li>Google Play Store Data Safety requirements</li>
+      <li>Firebase terms of service</li>
+    </ul>
+
+    <h2>Transparency Commitment</h2>
+    <p>We believe in complete transparency:</p>
+    <ul>
+      <li>Our code is open source (check our GitHub)</li>
+      <li>You can audit what data we collect</li>
+      <li>We explain everything in plain language</li>
+      <li>No hidden data collection</li>
+      <li>No shady practices</li>
+    </ul>
+
+    <h2>Summary</h2>
+    <p><strong>What we believe:</strong></p>
+    <ul>
+      <li>Your diary is YOUR private space</li>
+      <li>Privacy is a fundamental right</li>
+      <li>You own your data, not us</li>
+      <li>Transparency builds trust</li>
+    </ul>
+
+    <p><strong>Our promise:</strong></p>
+    <ul>
+      <li>We will NEVER read your diary entries</li>
+      <li>We will NEVER sell your data</li>
+      <li>We will NEVER compromise your privacy for profit</li>
+      <li>We will ALWAYS be transparent about any changes</li>
+    </ul>
+
+    <hr>
+
+    <p>Thank you for trusting NoteItUP with your personal thoughts and memories.</p>
+    <p><em>This policy is effective as of January 3, 2025.</em></p>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="copyright">
+        © <span id="year"></span> RomReviewer · NoteItUP is open source under the MIT License.
+      </div>
+    </div>
+  </footer>
+
+  <button class="m3-fab" id="scrollTopFab" aria-label="Scroll to top">
+    <span class="material-symbols-rounded">arrow_upward</span>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
